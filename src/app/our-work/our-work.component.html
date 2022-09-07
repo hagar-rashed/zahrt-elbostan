@@ -1,0 +1,90 @@
+<div class="container my-5">
+  <div class="row justify-content-lg-between justify-content-center text-center">
+    <div class="col-12">
+      <div class="sub-title">
+        <h1>بعض أعمالنا</h1>
+      </div>
+    </div>
+    <div class="card-section row  ">
+
+      <div class="col-lg-4 col-md-6 col-card" *ngFor="let image of cardImages">
+        <div class="card" [ngClass]="{'card-animation':card}">
+          <div class="overlay"></div>
+          <div class="image-card">
+            <img src="{{image.images}}" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-4 col-md-6">
+        <div class="card" [ngClass]="{'card-animation-one':card}">
+          <div class="overlay"></div>
+          <div class="image-card">
+            <img src="../../assets/images/277043224_3354634038085733_4092419398007843358_n.jpg" alt="">
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="col-lg-4 col-md-6">
+        <div class="card" [ngClass]="{'card-animation-two':card}">
+          <div class="overlay"></div>
+          <div class="image-card">
+            <img src="../../assets/images/289893390_1080162082576374_1926421512501715114_n.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card" [ngClass]="{'card-animation':card}">
+          <div class="overlay"></div>
+          <div class="image-card">
+            <img src="../../assets/images/300962952_3404682453148804_8270760042331645181_n.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card" [ngClass]="{'card-animation':card}">
+          <div class="overlay"></div>
+          <div class="image-card">
+            <img src="../../assets/images/301116802_367467588919068_2306644682336917303_n.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" [ngClass]="{'card-animation':card}">
+        <div class="card">
+          <div class="overlay"></div>
+          <div class="image-card">
+            <img src="../../assets/images/290054330_161595656429566_563928123007900144_n.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6"  [ngClass]="{'card-animation':card}">
+        <div class="card">
+          <div class="overlay"></div>
+          <div class="image-card">
+            <img src="../../assets/images/297089613_560393885783580_8610225449470542306_n.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card" [ngClass]="{'card-animation':card}">
+          <div class="overlay"></div>
+          <div class="image-card">
+            <img src="../../assets/images/297089613_560393885783580_8610225449470542306_n.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card" [ngClass]="{'card-animation':card}">
+          <div class="overlay"></div>
+          <div class="image-card">
+            <img src="../../assets/images/289893390_1080162082576374_1926421512501715114_n.jpg" alt="">
+          </div>
+        </div>
+      </div> -->
+      <div class="button text-center mb-3 mt-5">
+        <a class="btn" routerLink="/معرض الاعمال">المزيد</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="card" [ngClass]="{'card-animation':card}"> -->

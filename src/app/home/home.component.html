@@ -1,0 +1,30 @@
+<app-header></app-header>
+<app-about-us></app-about-us>
+<app-our-work></app-our-work>
+<div class="slider">
+  <div class="overlay"></div>
+  <div class="container  py-5 ">
+
+    <div class="row text-center ">
+      <div class="col-12">
+        <div class="sub-title mb-4">
+          <h1>خدماتنا</h1>
+        </div>
+      </div>
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide  *ngFor="let service of allservices">
+          <div class="category-item">
+
+              <img src="{{service.image}}" alt="">
+
+          </div>
+
+        </ng-template>
+
+      </owl-carousel-o>
+    </div>
+    <div class="button text-center mb-3 mt-5">
+      <a class="btn" routerLink="/معرض الاعمال">المزيد</a>
+    </div>
+  </div>
+</div>

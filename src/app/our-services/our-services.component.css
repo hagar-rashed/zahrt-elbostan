@@ -1,0 +1,142 @@
+.header-title {
+  font-size: 1.7em;
+  font-weight: bold ;
+  font-family: 'cairo';
+}
+
+
+.sub-title{
+  text-align: center;
+}
+
+
+.sub-title h1{
+  font-family: cairo;
+  font-size:1.7rem;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.sub-title h1::before{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 8px;
+  height: 6px;
+  background-color: #28b485;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.8s ease-in-out;
+}
+.card{
+  border: 1px solid #28b485;
+  box-shadow: 0px 0px 50px -23px rgba(7, 10, 7, 0.5);
+  margin: 20px 0;
+  text-align: center;
+  padding: 20px 0;
+  transition: 0.5s ease-in-out;
+  border-radius: 20px;
+}
+.card img{
+  margin: auto;
+  width: 40%;
+}
+.card i{
+  color: #0a5625;
+  font-size: 90px;
+}
+.card .card-title h1{
+  font-family: 'semi-cairo';
+  font-size: 1.3em;
+  font-weight: 800;
+  padding-top: 10px;
+}
+.button a{
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 20px 60px;
+  font-family: 'reg-cairo';
+  color: #fff;
+  background-color: #28b485;
+  font-size: 16px;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
+}
+
+.button a::after{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #28b485;
+  transition: all .5s ease-in-out;
+}
+.nav {
+  justify-content: center;
+}
+.nav-tabs .nav-link{
+  font-family: 'reg-cairo';
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+.nav-tabs .nav-link.active{
+  border: 1px solid #28b485;
+  border-bottom: 0px;
+  box-shadow: 0px 0px 50px -23px rgba(7, 10, 7, 0.5);
+  font-family: 'semi-cairo';
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 9;
+}
+@media (min-width: 1024px) {
+  .sub-title h1:hover::before{
+    width:120px ;
+  }
+  .card:hover{
+    transform: scale(1.05);
+  }
+  .button a:hover{
+    transform: translateY(-3px);
+  }
+  .button a:hover::after{
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
+  }
+
+}
+@media (max-width: 1024px) {
+  .sub-title h1::before{
+    width:100px ;
+  }
+
+}
+@media (max-width:768px){
+  /* .sub-title h1{
+    font-size: 25px !important;
+    line-height: 30px !important;
+  } */
+}
+@media (max-width:425px){
+  /* .header-title {
+    font-size: 28px;
+  } */
+
+  }
+
+
+  @media (max-width:280px){
+    /* .header-title{
+      font-size: 24px;
+    } */
+    }

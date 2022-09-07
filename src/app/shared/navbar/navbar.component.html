@@ -1,0 +1,68 @@
+<div style="position: relative">
+  <nav
+    [ngClass]="{ 'new-nav': newnav }"
+    class="navbar navbar-expand-lg navbar-light fixed-top w-100 shadow-0"
+    style="direction: rtl"
+  >
+    <div class="container">
+      <a class="navbar-brand" href="#!">
+        <!-- <span style="color: #5e9693">زهرة</span>
+        <span style="color: rgb(193, 190, 190)">البستان</span> -->
+        <img src="../../../assets/images/WhatsApp Image 2022-09-03 at 15.04.41.jpeg"  alt="">
+        </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto justify-content-between">
+          <li
+            class="nav-item"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a
+              class="nav-link "
+              routerLink="/"
+              [routerLinkActiveOptions]="{ exact: true }"
+              [routerLinkActive]="'active-link'"
+              >الرئيسية</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="'active'">
+            <a
+              class="nav-link "
+              routerLink="/معرض-الاعمال"
+              [routerLinkActive]="'active-link'"
+              >معرض الاعمال
+            </a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="'active'">
+            <a
+              class="nav-link "
+              routerLink="/services"
+              [routerLinkActive]="'active-link'"
+              >خدماتنا
+            </a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="'active'">
+            <a
+              class="nav-link "
+              routerLink="/contact"
+              [routerLinkActive]="'active-link'"
+              >تواصل معنا</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- Navbar -->

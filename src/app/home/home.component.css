@@ -1,0 +1,125 @@
+.sub-title{
+  padding: 10px 0px;
+  text-align: center;
+  color: #000;
+
+}
+.sub-title h1{
+  font-family: cairo;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 30px;
+  z-index: 9;
+  position: relative;
+}
+.sub-title h1::before{
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  width: 15px;
+  height: 6px;
+  background-color: #28b485;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.8s ease-in-out;
+}
+.gallery img{
+   margin:10px auto;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+a{
+  text-decoration: none;
+}
+.category-item{
+
+  width: 180px;
+  margin: auto;
+  height: 180px;
+  border-radius: 50%;
+  text-align: center;
+}
+.category-item img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content
+{
+  height: 100%;
+}
+.slider{
+  background-image: url(../../assets/images/288559897_115687217834392_1978887464814918280_n.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 8;
+}
+
+
+.button a{
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 20px 60px;
+  font-family: 'reg-cairo';
+  color: #fff;
+  background-color: #28b485;
+  font-size: 16px;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
+  z-index: 9;
+}
+
+.button a::after{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #28b485;
+  transition: all .5s ease-in-out;
+}
+@media (min-width: 1024px) {
+  .sub-title h1:hover::before{
+    width:120px ;
+  }
+
+  .button a:hover{
+    transform: translateY(-3px);
+  }
+  .button a:hover::after{
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .sub-title h1::before{
+    width:100px ;
+  }
+}
+/**/
+@media (max-width:768px){
+.category-item{
+  width: 150px;
+  height: 150px;
+}
+
+}
+/**/
